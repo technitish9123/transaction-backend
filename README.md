@@ -115,3 +115,32 @@ O(U)
 1. **Sorting dominates** the time complexity when \( U \) is large.
 2. **Space efficiency** is achieved by processing transactions directly into the `Map` without intermediate arrays.
 3. The algorithm is highly scalable, even with large datasets.
+
+# *Run the Server*
+1. Install Dependencies
+Install the required Node.js dependencies:
+
+```bash
+npm install
+```
+2. Set Up Environment Variables
+Create a .env file in the root directory and add the following:
+
+ETHERSCAN_API_KEY=<your-etherscan-api-key>
+Replace <your-etherscan-api-key> with your Etherscan API key. This is required to fetch blockchain transactions.
+
+## *Run the Server*
+Development Mode
+Start the server in development mode using ts-node:
+
+```bash
+npm run dev
+```
+Production Mode
+Build the project:
+
+Start the server:
+```bash
+npm start
+```
+The server will run on http://localhost:5000.
