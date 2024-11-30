@@ -4,7 +4,7 @@
   "description": "Node.js backend for processing blockchain transactions with TypeScript.",
   "main": "dist/server.js",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "npm run build && node dist/server.js",
     "dev": "ts-node src/server.ts",
     "build": "tsc"
   },
